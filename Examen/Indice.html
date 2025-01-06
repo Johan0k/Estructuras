@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puce Manta - Registro de Ventas</title>
+</head>
+<body>
+
+    <h1>Registro de Ventas Pablo Pablín Pablito</h1>
+
+    <label for="nombre">Nombre y apellido:</label>
+    <input type="text" id="nombre" placeholder="Ingrese nombre y apellido">
+    <br><br>
+
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion" placeholder="Ingrese descripción">
+    <br><br>
+
+    <label for="valoru">Valor unitario:</label>
+    <input type="number" id="valoru" placeholder="Ingrese valor unitario">
+    <br><br>
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" placeholder="Ingrese cantidad">
+    <br><br>
+
+    <button onclick="AgregarVenta()">Agregar Venta</button>
+    <button onclick="verVentas()">Ver Ventas</button>
+    <button onclick="BorrarVenta()">Eliminar Venta</button>
+
+    <h3>Registro de Ventas</h3>
+    <table id="TablaVentas">
+        <thead>
+            <tr>
+                <th>Nombres y Apellidos</th>
+                <th>Descripción</th>
+                <th>Valor Unitario</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <br><br>
+    <button onclick="verReciclaje()">Ver Cola de Reciclaje</button>
+
+
+    <h3>Cola de Reciclaje</h3>
+    <table id="ColaReciclaje">
+        <thead>
+            <tr>
+                <th>Nombres y Apellidos</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <br><br>
+    <button onclick="reporteVentas()">Ver Reporte de Ventas</button>
+
+    
+    <h3>Reporte de Ventas</h3>
+    <table id="Reporte">
+        <thead>
+            <tr>
+                <th>Nombres y Apellidos</th>
+                <th>Total Ventas</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #18191a;
+        }
+        th {
+            background-color: #18191a;
+            color: white;
+        }
+        td {
+            background-color: #ffffff;
+        }
+        input, button {
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #36a6db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #007BFF;
+        }
+    </style>
+
+    <script src="Examen.js"></script>
+
+</body>
+</html>
